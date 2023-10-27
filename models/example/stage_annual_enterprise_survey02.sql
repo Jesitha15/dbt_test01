@@ -1,6 +1,6 @@
 With
 tab2 AS(
-Select * from  ‘cloudside-academy.dbt_sample_data.annual-enterprise-survey02’),
+Select * from  `cloudside-academy.dbt_sample_data.annual-enterprise-survey02`),
 two AS (
 Select 
  id,
