@@ -8,7 +8,7 @@ SELECT
      {{ dbt_utils.star(from=ref('stage_annaul_enterprise_survey02'), except=["id"]) }}
         
 FROM
-     {{ ref('stage_annual_enterprise_survey02’) }} AS t2
+     {{ ref('stage_annual_enterprise_survey02') }} AS t2
 LEFT JOIN
      {{ ref('stage_annual_enterprise_survey01') }} AS t1
 
