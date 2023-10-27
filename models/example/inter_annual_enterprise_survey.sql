@@ -10,7 +10,8 @@ SELECT
 FROM
      {{ ref('Stage_annual_enterprise_survey02’) }} AS t2
 LEFT JOIN
-      {{ ref('Stage_annual_enterprise_survey01') }} AS t1
+     {{ ref('Stage_annual_enterprise_survey01') }} AS t1
+
 ON
     t1.id = t2.id
 )
